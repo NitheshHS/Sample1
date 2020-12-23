@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests"  thread-count="5">
+  <test  name="TestWnidwos">
+  <parameter name="Platform" value="WIN10"/>
+  <parameter name="url" value="http://192.168.56.1:3600"/>
+    <classes>
+      <class name="sample.SeleniumGrid"/>
+    </classes>
+  </test>
+   <test  name="TestMAC">
+   <parameter name="Platform" value="MAC Catalina"/>
+   <parameter name="url" value="http://192.168.56.1:3600"/>
+    <classes>
+      <class name="sample.SeleniumGrid"/>
+    </classes>
+  </test>
+   <!-- Test -->
+</suite> <!-- Suite -->
